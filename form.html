@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>
+Form
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 10;
+  padding:0;
+  overflow: hidden;
+ background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: underline;
+}
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
+</style>
+</head>
+<body>
+
+<ul class="topnav">
+  <li><a  href="Index.html">Home</a></li>
+  <li><a href="corona-news.html">Corona News</a></li>
+  <li><a class="active" href="form.html">Form</a></li>
+ <li><a href="arunachal-pradesh.html">Arunachal Pradesh</a></li>
+<li><a href="assam.html">Assam</a></li>
+<li><a href="manipur.html">Manipur</a></li>
+<li><a href="meghalaya.html">Meghalaya</a></li>
+<li><a href="Mizoram.html">Mizoram</a></li>
+<li><a href="nagaland.html">Nagaland</a></li>
+<li><a href="Tripura.html">Tripura</a></li>
+</ul>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: pink;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>    Please Fill out this Form</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="continent">Continent</label>
+    <select id="Continent" name="continent">
+      <option value="Australia">Australia</option>
+      <option value="Asia">Asia</option>
+      <option value="Europe">Europe</option>
+     <option value="South America">South America</option>
+     <option value="North America">South America</option>
+     <option value="Africa">Africa</option>
+     <option value="Antartica">Antartica</option>
+  
+   <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
